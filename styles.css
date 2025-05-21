@@ -45,11 +45,37 @@ main {
   list-style: none;
   padding: 0;
   margin: 0 0 12px 0;
-  display: flex;
-  gap: 16px;
   font-size: 0.95em;
   color: #666;
 }
+
+.metadata li {
+  display: inline;
+  margin-right: 16px;
+}
+
+.author-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 0 4px 0; /* This aligns the image to the left */
+  /*
+    margin: 0 0 4px 0;
+    This sets the margin for the element in this order:
+      - Top:    0
+      - Right:  0
+      - Bottom: 4px
+      - Left:   0
+    So, there is a 4px space below the image, and no space on the other sides.
+  */
+}
+
+/*
+  The margin property in CSS uses this order: top, right, bottom, left.
+  This is called the "clockwise" order, starting from the top and moving around the box.
+  Example: margin: top right bottom left;
+*/
 
 a {
   color: #007bff;
@@ -81,4 +107,5 @@ p {
 
 #more-articles li {
   margin-bottom: 8px;
+  display: inline;
 }
